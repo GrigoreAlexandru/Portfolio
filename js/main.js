@@ -143,7 +143,10 @@
         });
     };
 
-
+$('.item-folio__project-link').on( "click", function() {
+        window.open(this.getAttribute('href'), '_blank');
+        return false;
+    });
     /* photoswipe
      * ----------------------------------------------------- */
     var ssPhotoswipe = function() {
