@@ -1,153 +1,427 @@
-<!doctype html>
-<!--
-  Material Design Lite
-  Copyright 2015 Google Inc. All rights reserved.
-
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-      https://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License
--->
-<html lang="en">
+<!DOCTYPE html>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
 
 <head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110948619-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-110948619-1');
-</script>
-
+    <!--- basic page needs
+    ================================================== -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Personal portfolio">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Portfolio Grigore Alexandru</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-pink.min.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="shortcut icon" href="images/favicon.png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Portfolio</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
 </head>
 
-<body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
-            <div class="mdl-layout__header-row portfolio-logo-row">
-                <span class="mdl-layout__title">
-                    <div class="portfolio-logo"></div>
-                    <span class="mdl-layout__title">Grigore Alexandru</span>
-                </span>
-            </div>
-            <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
-                <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                    <a class="mdl-navigation__link is-active" href="index.html">Portfolio</a>
+<body id="top">
 
-                    <a class="mdl-navigation__link" href="about.html">About</a>
-                    <a class="mdl-navigation__link" href="contact.html">Contact</a>
-                </nav>
-            </div>
-        </header>
-        <div class="mdl-layout__drawer mdl-layout--small-screen-only">
-            <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                <a class="mdl-navigation__link is-active" href="index.html">Portfolio</a>
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+        <nav class="header-nav-wrap">
+            <ul class="header-nav">
+                <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                
+                <li><a class="smoothscroll"  href="#works" title="works">Works</a></li>
+              
+            </ul>
+        </nav>
 
-                <a class="mdl-navigation__link" href="about.html">About</a>
-                <a class="mdl-navigation__link" href="contact.html">Contact</a>
-            </nav>
+        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+
+    </header> <!-- end s-header -->
+
+
+   <!-- home
+   ================================================== -->
+   <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="images/hero-bg4.jpg" data-natural-width=3000 data-natural-height=1500 data-position-y=center>
+
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <h3>Student</h3>
+
+                <h1>
+                    Grigore Alexandru
+                </h1>
+
+              
+                 
+               <!--  </div> -->
+
+                <div class="home-content__scroll">
+                    <a href="#works" class="scroll-link smoothscroll">
+                        <span>Scroll Down</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div> <!-- end home-content -->
+
+        <ul class="home-social">
+            <li>
+                <a href="https://github.com/GrigoreAlexandru"><i class="im im-github" aria-hidden="true"></i><span>Github</span></a>
+            </li>
+ 
+        </ul> 
+        <!-- end home-social -->
+
+    </section> <!-- end s-home -->
+
+
+
+    <section id="works" class="s-works target-section"  data-image-src="images/hero-bg1.jpg" data-natural-width=3000 data-natural-height=1500 data-position-y=center>
+
+        <div class="row narrow section-intro has-bottom-sep">
+            <div class="col-full">
+                <h3>Portfolio</h3>
+                <h1>Personal Projects:</h1>
+                
+               
+            </div>
         </div>
-        <main class="mdl-layout__content">
-            <div class="mdl-grid portfolio-max-width">
 
-              <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                  <div class="mdl-card__media">
-                      <img class="article-image" src=" images/alireview2.PNG" border="0" alt="">
-                  </div>
-                  <div class="mdl-card__title">
-                      <h2 class="mdl-card__title-text">AliReview</h2>
-                  </div>
-                  <div class="mdl-card__supporting-text">
-                      Indexing products bought from Aliexpress and reviewing them.
-                  </div>
-                  <div class="mdl-card__actions mdl-card--border">
-                      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="alireview.html">Read more</a>
-                  </div>
-              </div>
-                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                    <div class="mdl-card__media">
-                        <img class="article-image" src=" images/yt.PNG" border="0" alt="">
-                    </div>
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Actual YouTube shuffle</h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        A Codeigniter app that lets you shuffle full youtube playlists
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="shuffle.html">Read more</a>
+        <div class="row masonry-wrap">
+            <div class="masonry">
+
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/cloudfeed.png" class="thumb-link" title="cloudfeed" data-size="1500x700">
+                                <img src="images/portfolio/cloudfeed.png" 
+                                      alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Cloud Feed
+                            </h3>
+                            <p class="item-folio__cat">
+                                Android Development
+                            </p>
+                        </div>
+
+                        <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                            <i class="im im-link"></i>
+                        </a>
+
+                        <div class="item-folio__caption">
+                            <p>Rss client with real time push notifications (or poll for unsupported feeds), offline db and user sync.</p>
+                        </div>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/backend.png" class="thumb-link" title="backend" data-size="1500x700">
+                                <img src="images/portfolio/backend.png" 
+                                      alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Cloudfeed backend
+                            </h3>
+                            <p class="item-folio__cat">
+                                Backend development
+                            </p>
+                        </div>
+
+                        <a href="https://github.com/GrigoreAlexandru/Cloud-Feed-Backend" class="item-folio__project-link" title="Project link">
+                            <i class="im im-link"></i>
+                        </a>
+
+                        <div class="item-folio__caption">
+                            <p>GCP App Engine app that provides real time notifications for Cloud-Feed on supported Rss feeds. The app listens to Firestore changes and manages feed supcriptions/unsubcriptions and triggers notifications.</p>
+                        </div>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/ytpdl.png" class="thumb-link" data-size="1500x700" title="YTPDL">
+                                <img src="images/portfolio/ytpdl.png" 
+                                      alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                YTPDL
+                            </h3>
+                            <p class="item-folio__cat">
+                                Python Development
+                            </p>
+                        </div>
+
+                        <a href="https://github.com/GrigoreAlexandru/auto_yt_playlist_downloader" class="item-folio__project-link" title="Project link">
+                            <i class="im im-link"></i>
+                        </a>
+
+                        <span class="item-folio__caption">
+                            <p>CLI tool that automates the downloading of youtube playlists. The tool polls the Youtube API at a set rate and downloads any new update. Uses youtube-dl to download videos. Also supports passing options to youtube-dl.</p>
+                        </span>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/parser.png" class="thumb-link" data-size="1500x700">
+                                <img src="images/portfolio/parser2.png"
+                                     title="parser" alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Modern feed parser
+                            </h3>
+                            <p class="item-folio__cat">
+                                Java development
+                            </p>
+                        </div>
+
+                        <a href="https://github.com/GrigoreAlexandru/Modern-feed-parser" class="item-folio__project-link" title="Project link">
+                            <i class="im im-link"></i>
+                        </a>
+
+                        <span class="item-folio__caption">
+                            <p>Upgraded version of simple-feed-parser with support for websub (pubsubhubbub), cloud, logo, thumbnail and encoded HTML.</p>
+                        </span>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/alireview.png" class="thumb-link" data-size="1500x700">
+                                <img src="images/portfolio/alireview.png"
+                                      alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Ali Review
+                            </h3>
+                            <p class="item-folio__cat">
+                                Laravel Web Development
+                            </p>
+                        </div>
+
+                        <a href="https://github.com/GrigoreAlexandru/Alireview" class="item-folio__project-link" title="Project link">
+                            <i class="im im-link"></i>
+                        </a>
+
+                        <span class="item-folio__caption">
+                            <p>Laravel project dedicated to indexing products bought from Aliexpress and reviewing them.</p>
+                        </span>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/lol.webp" class="thumb-link" data-size="1500x700">
+                                <img src="images/portfolio/lol.webp"
+                                      alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                League match info
+                            </h3>
+                            <p class="item-folio__cat">
+                                PHP development
+                            </p>
+                        </div>
+
+                        <a href="http://www.grigore-alexandru.ga/lol/" class="item-folio__project-link" title="Project link">
+                            <i class="im im-link"></i>
+                        </a>
+
+                        <span class="item-folio__caption">
+                            <p>League of Legends app that let's you see info about your in-game teammates.</p>
+                        </span>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/yt.png" class="thumb-link" data-size="1500x700">
+                                <img src="images/portfolio/yt.png"
+                                     srcset=" images/portfolio/yt.png 2x" alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                YouTube shuffle
+                            </h3>
+                            <p class="item-folio__cat">
+                                PHP Codeigniter development
+                            </p>
+                        </div>
+
+                        <a href="http://www.grigore-alexandru.ga/shuffle/" class="item-folio__project-link" title="Project link">
+                            <i class="im im-link"></i>
+                        </a>
+
+                        <span class="item-folio__caption">
+                            <p>This app is a replacement for the non-functional youtube shuffle(former)</p>
+                        </span>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+               
+
+           
+        </div> <!-- end masonry -->
+</div>
+    </section> <!-- end works -->
+
+
+    <footer>
+        <div class="row">
+           
+
+                <ul class="footer-social">
+                    <li><a href="https://github.com/GrigoreAlexandru">
+                        <i class="im im-github" aria-hidden="true"></i>
+                        <span>Github</span>
+                    </a></li>
+                   <li><span>grigorealexandru.dev@gmail.com</span></li>
+                </ul>
+                    
+            </div>
+        <!-- </div> -->
+
+        <div class="row footer-bottom">
+
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span>© Copyright Grigore Alexandru 2019</span> 
+                    <span>Original theme by <a href="https://www.styleshout.com/free-templates/hola/">styleshout</a></span>	
+                </div>
+
+                <div class="go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top"><i class="im im-arrow-up" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+        </div> <!-- end footer-bottom -->
+
+    </footer> <!-- end footer -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                    <div class="mdl-card__media">
-                        <img class="article-image" src=" images/lol.webp" onerror="this.onerror=null; this.src='images/lol.PNG'" border="0" alt="">
-                    </div>
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">League match info</h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                       Search summoners and get their in-game teammates info like rank, tier, elo
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="lol.html">Read more</a>
-                    </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
                 </div>
+            </div>
 
-                 <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                    <div class="mdl-card__media">
-                        <img class="article-image" src=" images/git.PNG" border="0" alt="">
-                    </div>
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">GitHub</h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                       Check out some of my ugly code
+        </div>
 
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/GrigoreAlexandru">Go to GitHub</a>
-                    </div>
-                </div>
+    </div><!-- end photoSwipe background -->
+
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
 
 
-                </div>
-                <div style="height:20rem;">
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
-                </div>
-                <footer class="mdl-mini-footer">
-                       <div class="mdl-mini-footer__left-section">
-                           <div class="mdl-logo">Portfolio Grigore Alexandru</div>
-                       </div>
-                       <div class="mdl-mini-footer__right-section">
-                           <ul class="mdl-mini-footer__link-list">
-                               <li><a href="https://github.com/GrigoreAlexandru">GitHub</a></li>
-                               <li><a href="https://getmdl.io/templates/index.html">Theme</a></li>
-
-                           </ul>
-                       </div>
-                   </footer>
-        </main>
- </div>
-
-    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </body>
 
 </html>
